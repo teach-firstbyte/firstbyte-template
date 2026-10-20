@@ -1,0 +1,24 @@
+# Dependabot opens pull requests when a package has a new version. CI runs on
+# each one. If CI passes and the change looks safe, merge it.
+#
+# Small updates (minor and patch) are grouped into one pull request a week so
+# they don't flood the PR list. Major updates come one at a time, because they
+# can break things and need someone to read the release notes.
+version: 2
+updates:
+  - package-ecosystem: npm # this also covers pnpm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]
