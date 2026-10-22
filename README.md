@@ -12,7 +12,8 @@ The starting point for FirstByte web projects. It has a working Next.js app,
 code checks that run on every pull request, and the team's GitHub and Claude
 Code setup.
 
-**Owner:** the website team lead (currently [@hecbatista](https://github.com/hecbatista)).
+**Owner:** the website admins team
+([@teach-firstbyte/website-admins](https://github.com/orgs/teach-firstbyte/teams/website-admins)).
 Ask them before changing the template itself.
 
 ## What's inside

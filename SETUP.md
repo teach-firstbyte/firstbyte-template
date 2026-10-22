@@ -23,7 +23,8 @@ Everything here uses free features only.
 - [ ] `CLAUDE.md`: the sentence at the top.
 - [ ] `package.json`: change `"name"` to the repo name.
 - [ ] `src/app/layout.tsx`: the page `title` and `description`.
-- [ ] `.github/CODEOWNERS`: the lead for this project.
+- [ ] `.github/CODEOWNERS`: leave `@teach-firstbyte/website-admins`, unless
+      another team owns this project.
 - [ ] Delete the example feature (see "Delete the example" in the README), or
       leave it for the team's first week and make an issue to delete it.
 - [ ] Commit these on a branch and open a pull request. This first pull
@@ -36,6 +37,12 @@ In the repo, go to **Settings → General**:
 - [ ] Under **Pull Requests**, turn on **Automatically delete head branches**.
 - [ ] Under **Features**, turn on **Issues**. Turn off **Wiki** (docs live in
       the repo).
+
+Go to **Settings → Collaborators and teams**:
+
+- [ ] Click **Add teams**, pick **website-admins**, and give it the **Write**
+      role (or higher). A template does not copy team access, and CODEOWNERS
+      only works for a team that can write to the repo.
 
 Go to **Settings → Advanced Security** (or **Code security**). The org turns
 these off for new repos, so turn them on:
@@ -90,10 +97,3 @@ This is what makes "every change goes through a pull request" a real rule.
 
 - [ ] Using Supabase? Follow [docs/guides/supabase.md](docs/guides/supabase.md).
 - [ ] Using something else? Write a guide in `docs/guides/` as you set it up.
-
-## Later
-
-- [ ] Create a GitHub team, `@teach-firstbyte/website-leads`
-      (org **Teams → New team**), add the leads, and put it in
-      `.github/CODEOWNERS` in place of one person. A team still works after a
-      lead graduates.
